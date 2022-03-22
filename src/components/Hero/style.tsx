@@ -10,11 +10,14 @@ const Container = styled.div`
   background-size: cover;
 
   h1 {
-    font-size: var(--fs-700);
+    font-size: var(--fs-900);
     font-weight: var(--fw-700);
 
-    @media (max-width: 35em) {
+    @media (max-width: 45em) {
       text-align: center;
+    }
+    @media (max-width: 35em) {
+      font-size: 2.8rem;
     }
   }
 `;

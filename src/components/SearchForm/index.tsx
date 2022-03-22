@@ -2,20 +2,21 @@ import { useState } from 'react';
 import { FaSearch } from 'react-icons/fa';
 import { GlobalContainer } from '~src/globals';
 import { InputEventType } from '~src/types';
-import { Container, SearchContainer } from './style';
+import { Container, SearchContainer, SearchHeading } from './style';
 
 const SearchForm = () => {
-  const [movie, setMovie] = useState('');
+  const [movieName, setMovieName] = useState('');
 
   const handleChange = (e: InputEventType) => {
     const { value } = e.target;
     console.log(value);
-    setMovie(value);
+    setMovieName(value);
   };
 
   return (
-    <Container>
+    <Container aria-label="search for movies">
       <GlobalContainer>
+        <SearchHeading element="h2">Search</SearchHeading>
         <SearchContainer>
           <FaSearch className="search__icon" />
           <input
@@ -23,7 +24,7 @@ const SearchForm = () => {
             name="search"
             id="search"
             placeholder="Search for a movie"
-            value={movie}
+            value={movieName}
             onChange={handleChange}
           />
         </SearchContainer>

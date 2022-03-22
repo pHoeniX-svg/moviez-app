@@ -13,10 +13,10 @@ const basicStyles = css`
     --clr-100: 0 0% 100%; // white
 
     /* font-sizes */
-    --fs-900: 3.6rem;
-    --fs-800: 3.2rem;
-    --fs-700: 2.4rem;
-    --fs-600: 2rem;
+    --fs-900: 7.2rem;
+    --fs-800: 3.6rem;
+    --fs-700: 3.2rem;
+    --fs-600: 2.4rem;
     --fs-500: 1.8rem;
     --fs-400: 1.6rem;
     --fs-300: 1.4rem;
@@ -30,7 +30,7 @@ const basicStyles = css`
     --fw-400: 400;
     --fw-300: 300;
 
-    --ff-primary: 'Nunito Sans', sans-serif;
+    --ff-primary: 'DM Sans', sans-serif;
 
     --max-width: 128rem;
   }

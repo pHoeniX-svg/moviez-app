@@ -8,9 +8,9 @@ const Container = styled.header`
   p {
     color: var(--clr-header);
     font-weight: var(--fw-400);
-    font-size: var(--fs-400);
+    font-size: var(--fs-600);
 
-    @media (max-width: 35em) {
+    @media (max-width: 45em) {
       text-align: center;
     }
   }

@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <Container>
       <GlobalContainer>
-        <HeaderText element="p">Moviez App</HeaderText>
+        <HeaderText element="p">MyTestApp</HeaderText>
       </GlobalContainer>
     </Container>
   );
