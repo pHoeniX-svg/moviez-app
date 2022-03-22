@@ -5,12 +5,12 @@ import { InputEventType } from '~src/types';
 import { Container, SearchContainer } from './style';
 
 const SearchForm = () => {
-  const [country, setCountry] = useState('');
+  const [movie, setMovie] = useState('');
 
   const handleChange = (e: InputEventType) => {
     const { value } = e.target;
     console.log(value);
-    setCountry(value);
+    setMovie(value);
   };
 
   return (
@@ -23,7 +23,7 @@ const SearchForm = () => {
             name="search"
             id="search"
             placeholder="Search for a movie"
-            value={country}
+            value={movie}
             onChange={handleChange}
           />
         </SearchContainer>
