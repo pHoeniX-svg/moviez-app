@@ -1,3 +1,6 @@
+export type InputEventType = React.ChangeEvent<HTMLInputElement>;
+export type FormEventType = React.FormEvent<HTMLFormElement>;
+
 export interface IMovie {
   Actors: string;
   Awards: string;

@@ -2,15 +2,15 @@ import styled, { createGlobalStyle, css } from 'styled-components';
 
 const basicStyles = css`
   :root {
-    color-scheme: light dark;
     scroll-behavior: smooth;
     scroll-padding-top: 2rem;
 
     /* colors */
-    --clr-400: 0, 0%, 90%;
-    --clr-300: 0, 0%, 98%;
-    --clr-200: 0, 0%, 0%;
-    --clr-100: 0 0% 100%;
+    --clr-500: 0, 0%, 0%; // black
+    --clr-400: 0, 0%, 16%; //#292929
+    --clr-300: 0, 0%, 90%; // #e5e5e5
+    --clr-200: 0, 0%, 98%; // #fafafa
+    --clr-100: 0 0% 100%; // white
 
     /* font-sizes */
     --fs-900: 3.6rem;
@@ -23,7 +23,7 @@ const basicStyles = css`
     --fs-200: 1.2rem;
     --fs-100: 1rem;
 
-    --fw-800: 700;
+    --fw-800: 800;
     --fw-700: 700;
     --fw-600: 600;
     --fw-500: 500;
@@ -33,21 +33,6 @@ const basicStyles = css`
     --ff-primary: 'Nunito Sans', sans-serif;
 
     --max-width: 128rem;
-  }
-
-  // mitigates the flashing of styles on DOM paint
-  [color-scheme='dark'] {
-    --clr-primary: hsl(var(--clr-100));
-    --clr-accent: hsl(var(--clr-200));
-    --bg-primary: hsl(var(--clr-500));
-    --bg-accent: hsl(var(--clr-600));
-  }
-
-  [color-scheme='light'] {
-    --clr-primary: hsl(var(--clr-400));
-    --clr-accent: hsl(var(--clr-300));
-    --bg-primary: hsl(var(--clr-200));
-    --bg-accent: hsl(var(--clr-100));
   }
 
   /* Set core root defaults */
@@ -81,53 +66,15 @@ const basicStyles = css`
   /*********** THEMING ************/
 
   body {
-    --clr-primary: hsl(var(--clr-400));
-    --clr-accent: hsl(var(--clr-300));
-    --bg-primary: hsl(var(--clr-200));
-    --bg-accent: hsl(var(--clr-100));
+    --clr-primary: hsl(var(--clr-500));
+    --clr-accent: hsl(var(--clr-100));
+    --clr-header: var(--clr-accent);
+
+    --bg-primary: hsl(var(--clr-300));
+    --bg-accent: hsl(var(--clr-200));
+    --bg-header: hsl(var(--clr-400));
+
     --shadow: 0 0.1rem 0.6rem rgb(0 0 0 / 10%);
-  }
-
-  [class*='theme-'] {
-    background: var(--bg-primary);
-    color: var(--clr-primary);
-  }
-
-  .theme-dark {
-    --clr-primary: hsl(var(--clr-100));
-    --clr-accent: hsl(var(--clr-200));
-    --bg-primary: hsl(var(--clr-500));
-    --bg-accent: hsl(var(--clr-600));
-  }
-
-  .theme-light {
-    --clr-primary: hsl(var(--clr-400));
-    --clr-accent: hsl(var(--clr-300));
-    --bg-primary: hsl(var(--clr-200));
-    --bg-accent: hsl(var(--clr-100));
-  }
-
-  @media (prefers-color-scheme: dark) {
-    body {
-      --clr-primary: hsl(var(--clr-100));
-      --clr-accent: hsl(var(--clr-200));
-      --bg-primary: hsl(var(--clr-500));
-      --bg-accent: hsl(var(--clr-600));
-    }
-
-    .theme-dark {
-      --clr-primary: hsl(var(--clr-100));
-      --clr-accent: hsl(var(--clr-200));
-      --bg-primary: hsl(var(--clr-500));
-      --bg-accent: hsl(var(--clr-600));
-    }
-
-    .theme-light {
-      --clr-primary: hsl(var(--clr-400));
-      --clr-accent: hsl(var(--clr-300));
-      --bg-primary: hsl(var(--clr-200));
-      --bg-accent: hsl(var(--clr-100));
-    }
   }
 
   /* Set core body defaults */

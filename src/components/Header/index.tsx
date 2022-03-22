@@ -1,10 +1,12 @@
 import { GlobalContainer } from '~src/globals';
-import { Container } from './style';
+import { Container, HeaderText } from './style';
 
 const Header = () => {
   return (
     <Container>
-      <GlobalContainer></GlobalContainer>
+      <GlobalContainer>
+        <HeaderText element="p">Moviez App</HeaderText>
+      </GlobalContainer>
     </Container>
   );
 };
