@@ -19,7 +19,7 @@ const CategoryList = styled.div`
   }
 
   & > * {
-    flex: 1;
+    flex-shrink: 0;
   }
 `;
 
