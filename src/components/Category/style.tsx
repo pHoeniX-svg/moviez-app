@@ -43,6 +43,7 @@ const CategoryCard = styled.article`
     transform: translate(-50%, -50%);
     z-index: 4;
     color: var(--clr-accent);
+    font-size: var(--fs-700); // arbitrary size; will change later
   }
 `;
 
