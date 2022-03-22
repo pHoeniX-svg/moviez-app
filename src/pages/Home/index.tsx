@@ -6,8 +6,7 @@ const Home = () => {
       <Hero />
       <SearchForm />
       <Category />
-
-      {/* <Category/> */}
+      <Category />
     </>
   );
 };
