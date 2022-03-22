@@ -1,6 +1,6 @@
 import axios from 'axios';
-import { BASE_URL } from '~src/constants';
+import { API_URL } from './config';
 
 export const MoviesAPi = axios.create({
-  baseURL: BASE_URL,
+  baseURL: API_URL,
 });
