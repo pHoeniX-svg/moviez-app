@@ -4,7 +4,7 @@ import { CategoryCard, CategoryHeader, CategoryList, Container } from './style';
 
 const Category = () => {
   return (
-    <Container>
+    <Container aria-label="movie category">
       <GlobalContainer>
         <CategoryHeader>Some Text</CategoryHeader>
         {/* Cards */}
